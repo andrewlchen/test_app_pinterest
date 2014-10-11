@@ -1,0 +1,23 @@
+/* You can change fonts like this: ;
+$font-family-sans-serif: Oxygen !default; 
+@import url(http://fonts.googleapis.com/css?family=Oxygen);
+*/
+
+
+@import 'bootstrap';
+
+$grayLight: #999;
+$gray: #555;
+
+
+body {
+	padding-top: 60px;
+}
+
+.footer {
+	margin-top: 50px;
+	color: $grayLight;
+	a {
+		color: $gray;
+	}
+}
