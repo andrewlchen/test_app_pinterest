@@ -1,10 +1,14 @@
-<div class="jumbotron">
-	<h1>Welcome to CareerHoot!</h1>
-	<p>
-		You found the home page for 
-		<%= link_to "CareerHoot", "http://careerhoot.com" %>
-	</p>
-	<p>
-		<%= link_to "Sign Up Now!", "#", class: "btn btn-primary btn-lg" %>
-	</p>
-</div>
+<% if user_signed_in? %>
+	<h1>You are logged in!</h1>
+<% else %>
+	<div class="jumbotron">
+		<h1>Welcome to CareerHoot!</h1>
+		<p>
+			You found the home page for 
+			<%= link_to "CareerHoot", "http://careerhoot.com" %>
+		</p>
+		<p>
+			<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+		</p>
+	</div>
+<% end %>
